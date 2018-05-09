@@ -127,17 +127,18 @@ public class PedidoController {
 		}
 
 		if (jaCadastrados.size() == 1) {
-			response = "O número de controle " + jaCadastrados.get(0)
+			response += "O número de controle " + jaCadastrados.get(0)
 					+ " já esta cadastrado então o mesmo não foi inserido no banco.";
 		}
 
 		if (jaCadastrados.size() > 1) {
 
-			response = "Segue os controles que por já estarem no banco de dados não foram inseridos novamente: ";
+			response += "Segue os controles que por já estarem no banco de dados não foram inseridos novamente: ";
 			for (int i = 0; i < jaCadastrados.size(); i++) {
 				response += jaCadastrados.get(i) + " ";
 			}
 		}
+		
 
 		return response;
 	}
