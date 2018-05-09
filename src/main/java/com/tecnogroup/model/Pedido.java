@@ -1,4 +1,4 @@
-package com.tecnogroup;
+package com.tecnogroup.model;
 
 import java.time.LocalDate;
 

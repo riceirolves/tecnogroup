@@ -1,4 +1,4 @@
-package com.tecnogroup;
+package com.tecnogroup.controller;
 
 import java.io.IOException;
 import java.time.LocalDate;
@@ -19,6 +19,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.type.CollectionType;
 import com.fasterxml.jackson.databind.type.TypeFactory;
+import com.tecnogroup.model.Pedido;
+import com.tecnogroup.repository.PedidoRepository;
 
 @RestController
 public class PedidoController {
